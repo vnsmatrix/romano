@@ -10,6 +10,7 @@ h1 {
     color: lime;
     font-weight: lighter;
     margin: 13px;
+    text-shadow: 2px 2px black;
 }
 
 h3 {
@@ -28,7 +29,6 @@ h4 {
 h5 {
     text-align: center;
     margin: 10px;
-    font-size: 10px;
     font-weight: lighter;
 }
 
@@ -83,25 +83,21 @@ nav {
     flex-wrap: wrap;
     margin: 33px;
     margin-top: 77px;
-}
-
-.code {
-    font-size: 10px;
+    margin-bottom: 99px;
 }
 
 video {
     padding: 3px;
-    border: 2px dotted lime;
+    border: 3px dotted lime;
 }
 
 video:hover {
     opacity: 0.8;
-    border: 2px dotted fuchsia;
+    border: 3px dotted fuchsia;
 }
 
 footer {
     position: fixed;
-    display: block;
     text-align: right;
     font-size: 12px;
     right: 0vw;
