@@ -29,8 +29,9 @@ h4 {
 h5 {
     text-align: center;
     margin: 10px;
+    padding-bottom: 33px;
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 a {

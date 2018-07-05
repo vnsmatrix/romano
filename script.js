@@ -31,4 +31,12 @@ $(document).ready(function () {
         $("video")[3].currentTime = 0;
         $("#petitiontech").hide();
     });
+    $("#spotify").hover(function () {
+        $("video")[4].play();
+        $("#spotifytech").show();
+    }, function () {
+        $("video")[4].pause();
+        $("video")[4].currentTime = 0;
+        $("#spotifytech").hide();
+    });
 });
