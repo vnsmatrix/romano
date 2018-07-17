@@ -30,7 +30,7 @@ h1:hover {
 }
 
 #links a:hover, #nav-v a i:hover {
-    color: lime;
+    color: red;
     -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
     animation-duration: 1s;
