@@ -3,65 +3,38 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link href="weather.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css"></link>
-        <title>code it, grrrl!</title>
+        <title>Nil & Karin Romano</title>
     </head>
-  <body>
+  <body class="weather rain">
     <div class='container'>
+
         <nav>
+            <audio id="cat">
+	            <source src="meow.mp3"></source>
+            </audio>
             <div id="home">
-                <a href="index.html"><h1>DÁNAE CUESTA</h1>
-                <h3>Full Stack JavaScript Developer</h3></a>
+                <a class='home' href="index.html"><h1>NIL & KARIN ROMANO</h1></a>
             </div>
 
             <div id='links'>
-                <a href="https://drive.google.com/file/d/18oA1S5VPA6D_1N-FeGakRzlbvn7N_eIh/view?usp=sharing"  title="resumé in pdf" target="_blank">cv</a>
-                <a href="https://github.com/vnsmatrix" title="look at my code ;)" target="_blank">github</a>
-                <a href="https://www.linkedin.com/in/danaecuesta/" title="hire me!" target="_blank">linkedin</a>
+                <a href="https://img.buzzfeed.com/buzzfeed-static/static/2015-07/21/18/enhanced/webdr09/anigif_enhanced-buzz-12014-1437517940-5.gif">ABOUT</a>
+                <a href="https://img.buzzfeed.com/buzzfeed-static/static/2015-07/21/18/enhanced/webdr09/anigif_enhanced-buzz-12014-1437517940-5.gif">ARTWORKS</a>
+                <a href="https://img.buzzfeed.com/buzzfeed-static/static/2015-07/21/18/enhanced/webdr09/anigif_enhanced-buzz-12014-1437517940-5.gif">CONTACT</a>
+            </div>
+            <div id="nav-v">
+                <a href="https://www.instagram.com/_blackorchids_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/nil.romano" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://soundcloud.com/music-junkies-twins" target="_blank"><i class="fab fa-soundcloud"></i></a>
             </div>
         </nav>
+        <div class="pointer"></div>
+
         <section id="content">
-            <div class="proyect">
-                <a href="http://qkb.herokuapp.com/" target="_blank">
-                    <h4>Online Art Gallery</h4>
-                    <video id="qkb" src="qkb.mov" style="width: 50vw" type="video/mov"  muted="muted" title="click here to visit or go to github to see the code :)">/></video>
-                </a>
-                <a href="https://github.com/vnsmatrix/qkb"><i class="fab fa-github"></i></a>
-                <h5 style="max-width: 50vw" id="qkbtech">Features: Pictures carousel, explore art by medium or artist, news from Twitter API, register/login/logout, edit account, wishlist. Built with JavaScript using React, Node.js, SQL, HTML/CSS.</h5>
-            </div>
-
-            <div class="project">
-                <a href="http://kitties-vs-unicorns.bitballoon.com/" target="_blank">
-                    <h4>Connect 4</h4>
-                    <video id="artgallery" src="c4.mov" style="width: 40vw" style="max-width: 60vh" type="video/mov" muted="muted" title="click here to visit or go to github to see the code :)"/></video>
-                </a>
-                <h5 id="c4tech" style="max-width: 40vw">Kitties Vs. Unicorns: Be the first to connect 4 and rule the universe! Built with JS, jQuery, HTML/CSS.</h5>
-            </div>
-
-            <div class="project">
-                <a href="https://kitty-net.herokuapp.com/" target="_blank">
-                    <h4>Social Network</h4>
-                    <video id="social" src="social.mov" style="width: 30vw" type="video/mov" muted="muted" title="click here to visit or go to github to see the code :)"/></video>
-                </a>
-                <h5 id="socialtech" style="max-width: 30vw">Features: Register, log in/log out, change profile picture, send/accept/reject friend requests, see friends/pending friends/online users, chat. Built with JS using React, Node.js, Socket.io, SQL, HTML/CSS.</h5>
-            </div>
-
-            <div class="project">
-                <a href="https://vns-petition.herokuapp.com/" target="_blank">
-                    <h4>Petition</h4>
-                    <video id="petition" src="petition.mov" style="width: 25vw" type="video/mov" muted="muted" title="click here to visit or go to github to see the code :)"/></video>
-                </a>
-                <h5 id="petitiontech" style="max-width: 25vw">Features: Sign up, log in/log out, sign on canvas, edit user profile, see signers by city. Built with JS using Node.js, HTTPS, Bcrypt, jQuery, SQL, Handlebars and CSS. </h5>
-            </div>
-
-            <div class="project">
-                <a href="http://spoti-search.surge.sh/" target="_blank">
-                    <h4>Spotify Search</h4>
-                    <video id="spotify" src="spotify.mov" style="width: 20vw" type="video/mov" muted="muted" title="click here to visit or go to github to see the code :)"/></video>
-                </a>
-                <h5 id="spotifytech" style="max-width: 20vw">Features: Search by artist or album via Spotify API, infinite scroll. Built with JS using jQuery, ajax and HTML/CSS.</h5>
-            </div>
-
+                <!-- <div class="flash"><a href="">Welcome...</a></div> -->
         </section>
 
     </div>
@@ -69,5 +42,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src='script.js'></script>
 </body>
- <footer><br>2018 © danaecuesta@gmail.com</footer>
+ <footer><br><a href="codeitgrrrl.surge.sh">web design & development by Dánae Cuesta</a></footer>
 </html>

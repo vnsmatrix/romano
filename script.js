@@ -1,42 +1,23 @@
 $(document).ready(function () {
-    $("#qkb").hover(function () {
-        $("video")[0].play();
-        $("#qkbtech").show();
-    }, function () {
-        $("video")[0].pause();
-        $("video")[0].currentTime = 0;
-        $("#qkbtech").hide();
+
+    $(document).mousemove(function(e) {
+            $(".pointer").css('top', + (e.clientY - 90));
+            $(".pointer").css('left', + (e.clientX - 30));
     });
-    $("#artgallery").hover(function () {
-        $("video")[1].play();
-        $("#c4tech").show();
-    }, function () {
-        $("video")[1].pause();
-        $("video")[1].currentTime = 0;
-        $("#c4tech").hide();
+
+
+    var audio = $("audio")[0];
+    $("#home").mouseenter(function() {
+         var playPromise = audio.play();
+         if (playPromise !== undefined) {
+           playPromise.then(function() {
+
+           }).catch(function(error) {
+             // Automatic playback failed.
+             // Show a UI element to let the user manually start playback.
+           });
+       }
     });
-    $("#social").hover(function () {
-        $("video")[2].play();
-        $("#socialtech").show();
-    }, function () {
-        $("video")[2].pause();
-        $("video")[2].currentTime = 0;
-        $("#socialtech").hide();
-    });
-    $("#petition").hover(function () {
-        $("video")[3].play();
-        $("#petitiontech").show();
-    }, function () {
-        $("video")[3].pause();
-        $("video")[3].currentTime = 0;
-        $("#petitiontech").hide();
-    });
-    $("#spotify").hover(function () {
-        $("video")[4].play();
-        $("#spotifytech").show();
-    }, function () {
-        $("video")[4].pause();
-        $("video")[4].currentTime = 0;
-        $("#spotifytech").hide();
-    });
+
+
 });
