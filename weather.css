@@ -39,10 +39,10 @@
     transform: rotate(10deg);
 
     -webkit-animation-name: weather;
-    -webkit-animation-timing-function: cubic-bezier();
+    -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     animation-name: weather;
-    animation-timing-function: cubic-bezier();
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 .weather:after {

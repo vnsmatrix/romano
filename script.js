@@ -8,15 +8,15 @@ $(document).ready(function () {
 
     var audio = $("audio")[0];
     $("#home").mouseenter(function() {
-         var playPromise = audio.play();
-         if (playPromise !== undefined) {
-           playPromise.then(function() {
+        var playPromise = audio.play();
+        if (playPromise !== undefined) {
+            playPromise.then(function() {
 
-           }).catch(function(error) {
+            }).catch(function(error) {
              // Automatic playback failed.
              // Show a UI element to let the user manually start playback.
-           });
-       }
+            });
+        }
     });
 
 
