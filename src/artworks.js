@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Artwork from './artwork';
 import {Link} from 'react-router-dom';
 
 export default class Artworks extends React.Component {
@@ -29,10 +30,13 @@ export default class Artworks extends React.Component {
             <div className="artworks">
             {this.state.artworks.map(artwork => {
                 return (
-                    <div className="prev-container">
+                    <div className="prev-container" key={artwork.id}>
                         <div className="prev">
                             <div className="prev-img">
-                                <img src={artwork.img} />
+                                <Link to={`/artwork/${artwork.id}`}
+                                    artwork={artwork}>
+                                    <img src={artwork.img} />
+                                </Link>
                             </div>
                             <div className="name">
                                 {artwork.title}

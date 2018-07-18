@@ -3,6 +3,7 @@ import axios from 'axios';
 import {BrowserRouter, Route, Link} from 'react-router-dom'
 import About from './about';
 import Artworks from './artworks';
+import Artwork from './artwork';
 import Contact from './contact';
 
 export default class App extends React.Component {
@@ -25,7 +26,7 @@ export default class App extends React.Component {
                     </div>
 
                     <div id='links'>
-                        <Link to="about">ABOUT</Link>
+                        <Link to="/about">ABOUT</Link>
                         <Link to="/artworks">ARTWORKS</Link>
                         <Link to="/contact">CONTACT</Link>
                     </div>
@@ -47,6 +48,7 @@ export default class App extends React.Component {
 
                         <Route path="/about" component={About} />
                         <Route path="/artworks" component={Artworks} />
+                        <Route exact path="/artwork/:id" component={Artwork} />
                         <Route path="/contact" component={Contact} />
                     </div>
                 </div>

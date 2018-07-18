@@ -138,6 +138,21 @@ nav {
     color: lime;
 }
 
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 111vw;
+    height: 127vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-img img {
+    margin-top: 33px;
+    width: 90vh;
+}
+
+
 .content {
     width: 93vw;
     height: 87vh;
