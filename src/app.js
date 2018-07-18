@@ -22,7 +22,7 @@ export default class App extends React.Component {
                         <source src="meow.mp3"></source>
                     </audio>
                     <div className='home'>
-                        <a href="index.html"><h1>NIL & KARIN ROMANO</h1></a>
+                        <Link to="/artworks"><h1>NIL & KARIN ROMANO</h1></Link>
                     </div>
 
                     <div id='links'>
@@ -42,7 +42,7 @@ export default class App extends React.Component {
                         <Route exact
                             path="/"
                             render={() => (
-                                <About/>
+                                <Artworks/>
                             )}
                         />
 
