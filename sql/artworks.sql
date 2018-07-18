@@ -45,7 +45,7 @@ INSERT INTO artworks (id, title, img, medium, format) VALUES
 
 INSERT INTO artworks (id, title, img, medium, format) VALUES
     (6, 'Cheers To All My Tortured Boys',
-    'http://i63.tinypic.com/90u7iv.jpg',
+    'http://i65.tinypic.com/9t0mm8.jpg',
     'Acrylic on canvas',
     '100 x 120 cm'
 );
@@ -102,6 +102,97 @@ INSERT INTO artworks (id, title, img, medium, format) VALUES
 INSERT INTO artworks (id, title, img, medium, format) VALUES
     (14, 'The Circus Of Hell',
     'http://i64.tinypic.com/15r1g1v.jpg',
+    'Acrylic on paper',
+    '50 x 70 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (15, 'The Twin Connection',
+    'http://i66.tinypic.com/2m6q39v.jpg',
+    'Acrylic on canvas',
+    '100 x 100 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (16, 'Playing With My Demons',
+    'http://i65.tinypic.com/5djlag.jpg',
+    'Acrylic on canvas',
+    '100 x 100 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (17, 'Between Nightmare And Insomnia',
+    'http://i66.tinypic.com/nq8oko.jpg',
+    'Acrylic on canvas',
+    '100 x 100 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (18, 'Dancing With Crocodiles',
+    'http://i64.tinypic.com/ut3r5.jpg',
+    'Acrylic on canvas',
+    '80 x 120 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (19, 'There Will Be A Piece Of You In Me Always',
+    'http://i67.tinypic.com/2q0qbls.jpg',
+    'Acrylic on canvas',
+    '80 x 120 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (20, 'He Was A Soft Flower With A Tinsel Heart',
+    'http://i65.tinypic.com/b5ntdw.jpg',
+    'Acrylic on canvas',
+    '80 x 120 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (21, 'Swallow Me In One Piece',
+    'http://i68.tinypic.com/2dbl05j.jpg',
+    'Acrylic on canvas',
+    '80 x 120 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (22, 'The Capitalists Sell Us The Rope We Hang Ourselves With',
+    'http://i64.tinypic.com/30htrlt.jpg',
+    'Acrylic on canvas',
+    '80 x 120 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (23, 'The Attack Of The Giant Ants',
+    'http://i64.tinypic.com/35lbwbd.jpg',
+    'Acrylic on canvas',
+    '80 x 120 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (24, 'Twins Of Anarchy',
+    'http://i68.tinypic.com/adnsm0.jpg',
+    'Acrylic on paper',
+    '50 x 70 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (25, 'Night In Madhouse',
+    'http://i63.tinypic.com/jfdnnm.jpg',
+    'Acrylic on paper',
+    '50 x 70 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (26, 'Sadistic Love',
+    'http://i68.tinypic.com/jzk55d.jpg',
+    'Acrylic on paper',
+    '50 x 70 cm'
+);
+
+INSERT INTO artworks (id, title, img, medium, format) VALUES
+    (27, 'Possessed By The Poisoned Snakes',
+    'http://i64.tinypic.com/2ey9643.jpg',
     'Acrylic on paper',
     '50 x 70 cm'
 );

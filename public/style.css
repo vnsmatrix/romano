@@ -93,7 +93,16 @@ nav {
     margin: 13px;
 }
 
-.medium, .dets {
+.name {
+    text-shadow: 1px 1px black;
+}
+
+.medium{
+    font-size: 16px;
+    color: black;
+}
+
+.dets {
     font-size: 16px;
     color: red;
 }
