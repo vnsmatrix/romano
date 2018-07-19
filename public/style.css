@@ -95,6 +95,7 @@ nav {
 }
 
 .artworks img:hover {
+    opacity: 0.9;
     transform: scale(1.05);
 }
 
@@ -155,6 +156,7 @@ nav {
 .modal-img img {
     margin-top: 33px;
     width: 90vh;
+    max-height: 120vh; 
 }
 
 
