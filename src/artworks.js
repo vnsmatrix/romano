@@ -34,7 +34,7 @@ export default class Artworks extends React.Component {
                         <div className="prev">
                             <div className="prev-img">
                                 <Link to={`/artwork/${artwork.id}`}
-                                    artwork={artwork}>
+                                    artwork={artwork} id={artwork.id}>
                                     <img src={artwork.img} />
                                 </Link>
                             </div>

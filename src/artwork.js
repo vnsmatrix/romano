@@ -19,6 +19,16 @@ export default class Artwork extends React.Component {
         })
     }
 
+    componentDidUpdate() {
+        let hash = this.props.location.hash.replace('artwork/#', 'artworks');
+        if (hash) {
+            let node = ReactDOM.findDOMNode(this.refs[hash]);
+            if (node) {
+                node.scrollIntoView();
+            }
+        }
+    }
+
     render() {
         console.log('Artwork render this.state', this.state);
         if(!this.state.artwork) {
@@ -29,7 +39,7 @@ export default class Artwork extends React.Component {
 
                 <div className="modal-container">
                     <div className="modal-img">
-                        <Link to="/artworks">
+                        <Link to="/artworks#scroll_here">
                             <img src={this.state.artwork.img} />
                         </Link>
 

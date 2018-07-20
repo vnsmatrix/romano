@@ -6,7 +6,6 @@ body {
     color: red;
     background-image: url("bg.jpg");
     cursor:url(baby.png), auto;
-
 }
 
 h1 {
@@ -156,7 +155,7 @@ nav {
 .modal-img img {
     margin-top: 33px;
     width: 90vh;
-    max-height: 120vh; 
+    max-height: 120vh;
 }
 
 
