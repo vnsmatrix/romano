@@ -30,12 +30,13 @@ export default class Artworks extends React.Component {
             <div className="artworks">
             {this.state.artworks.map(artwork => {
                 return (
+
                     <div className="prev-container" key={artwork.id}>
                         <div className="prev">
                             <div className="prev-img">
                                 <Link to={`/artwork/${artwork.id}`}
                                     artwork={artwork} id={artwork.id}>
-                                    <img src={artwork.img} />
+                                    <img src={artwork.img} id="anchor"/>
                                 </Link>
                             </div>
                             <div className="name">
@@ -47,6 +48,7 @@ export default class Artworks extends React.Component {
                             <div className="dets">
                                 {artwork.format}
                             </div>
+
                         </div>
                     </div>
                 )

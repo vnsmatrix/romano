@@ -9,7 +9,7 @@ export default class Artwork extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`/get-artwork/${this.props.match.params.id}`).then(resp => {
+        axios.get(`/get-artwork/${this.props.match.params.id -1}`).then(resp => {
             console.log("Artwork axios.get resp.data", resp.data);
             this.setState({
                 artwork: resp.data.artwork
@@ -20,31 +20,21 @@ export default class Artwork extends React.Component {
     }
 
     componentDidUpdate() {
-        axios.get(`/get-artwork/${this.props.match.params.id}`).then(resp => {
-            console.log("Artwork axios.get resp.data", resp.data);
-            this.setState({
-                artwork: resp.data.artwork
-            })
-        }).catch(e => {
-            console.log("Artwork component did not mount", e);
-        })
+
     }
 
     render() {
         console.log('Artwork render this.state', this.state);
         if(!this.state.artwork) {
-            return <div>take care of <0 n >27 </div>;
+            return null;
         }
         return (
             <div className="artwork">
 
                 <div className="modal-container">
                     <div className="arrow prev">
-                        <Link to={`/artwork/${this.state.artwork.id -1}`} >
-                            <div className="prev">
-                                left
-                            </div>
-
+                        <Link to={`/artwork/${this.state.artwork.id -1}`}>
+                            <div className="prev-one"></div>
                             <div className="prev-two"></div>
                         </Link>
                     </div>

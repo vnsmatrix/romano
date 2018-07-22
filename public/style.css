@@ -156,6 +156,9 @@ nav {
     margin-top: 33px;
     width: 90vh;
     max-height: 120vh;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    animation-duration: 0.7s;
 }
 
 
@@ -191,6 +194,98 @@ footer a{
     position: absolute;
     opacity: 0.9;
     display: block;
+}
+
+/***ARROWS***/
+
+.arrow {
+    font-family: Helvetica;
+    font-size: 30px;
+    font-weight: 800;
+    height: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+    position: fixed;
+    top: 40%;
+}
+
+.arrow a:visited {
+    color: gray;
+}
+
+.arrow a:hover {
+    color: red;
+}
+
+.prev:hover .prev-one {
+    background-color: red;
+    transform: rotate(-45deg);
+    background-color: red;
+    transition: transform 0.2s, background-color 0.5s;
+}
+
+.prev:hover .prev-two {
+    background-color: red;
+    transform: rotate(45deg);
+    background-color: red;
+    transition: transform 0.2s, background-color 0.5s;
+}
+.prev-one {
+    width: 100px;
+    height: 4px;
+    transform: rotate(90deg);
+    background-color: lightgray;
+    transition: transform 0.2s, background-color 0.5s;
+}
+
+.prev-two {
+    margin-top: 65px;
+    width: 100px;
+    height: 4px;
+    transform: rotate(-90deg);
+    background-color: lightgray;
+    transition: transform 0.2s, background-color 0.5s;
+}
+
+.prev {
+    float: left;
+    left: 0;
+}
+
+.next {
+
+    float:right;
+    right:0;
+}
+
+.next:hover .next-one {
+    background-color: red;
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+    background-color: red;
+}
+
+.next:hover .next-two {
+    background-color: red;
+    transform: rotate(-45deg);
+    transition: transform 0.2s;
+    background-color: red;
+}
+.next-one {
+    width: 100px;
+    height: 4px;
+    transform: rotate(-90deg);
+    transition: transform 0.2s;
+    background-color: lightgray;
+}
+
+.next-two {
+    margin-top: 65px;
+    width: 100px;
+    height: 4px;
+    transform: rotate(90deg);
+    transition: transform 0.2s;
+    background-color: lightgray;
 }
 
 @-webkit-keyframes flash {
@@ -418,6 +513,30 @@ footer a{
   }
 }
 
-.lightSpeedIn {
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
 
 }

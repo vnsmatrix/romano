@@ -5,6 +5,7 @@ import About from './about';
 import Artworks from './artworks';
 import Artwork from './artwork';
 import Contact from './contact';
+import SimpleSlider from './slider';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -22,7 +23,7 @@ export default class App extends React.Component {
                         <source src="meow.mp3"></source>
                     </audio>
                     <div className='home'>
-                        <Link to="/artworks"><h1>NIL & KARIN ROMANO</h1></Link>
+                        <Link to="/home"><h1>NIL & KARIN ROMANO</h1></Link>
                     </div>
 
                     <div id='links'>
@@ -31,9 +32,9 @@ export default class App extends React.Component {
                         <Link to="/contact">CONTACT</Link>
                     </div>
                     <div id="nav-v">
-                        <a href="https://www.instagram.com/_blackorchids_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://facebook.com/nil.romano" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://soundcloud.com/music-junkies-twins" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                        <a href="https://www.instagram.com/_blackorchids_/" target="_blank"><i className="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/nil.romano" target="_blank"><i className="fab fa-facebook-f"></i></a>
+                        <a href="https://soundcloud.com/music-junkies-twins" target="_blank"><i className="fab fa-soundcloud"></i></a>
                     </div>
                 </nav>
 
@@ -50,6 +51,7 @@ export default class App extends React.Component {
                         <Route path="/artworks" component={Artworks} />
                         <Route exact path="/artwork/:id" component={Artwork} />
                         <Route path="/contact" component={Contact} />
+                        <Route path="/home" component={SimpleSlider} />
                     </div>
                 </div>
 
