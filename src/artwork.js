@@ -42,10 +42,8 @@ export default class Artwork extends React.Component {
                     <div className="arrow prev">
                         <Link to={`/artwork/${this.state.artwork.id -1}`} >
                             <div className="prev">
-                                left
+                                cool snake here
                             </div>
-
-                            <div className="prev-two"></div>
                         </Link>
                     </div>
                     <div className="modal-img">
@@ -55,8 +53,8 @@ export default class Artwork extends React.Component {
                     </div>
                     <div className="arrow next">
                         <Link to={`/artwork/${this.state.artwork.id +1}`}>
-                            <div className="prev-one"></div>
-                            <div className="prev-two"></div>
+                            <img src=""/>
+                            
                         </Link>
                     </div>
                 </div>

@@ -217,36 +217,6 @@ footer a{
     color: red;
 }
 
-.prev:hover .prev-one {
-    background-color: red;
-    transform: rotate(-45deg);
-    background-color: red;
-    transition: transform 0.2s, background-color 0.5s;
-}
-
-.prev:hover .prev-two {
-    background-color: red;
-    transform: rotate(45deg);
-    background-color: red;
-    transition: transform 0.2s, background-color 0.5s;
-}
-.prev-one {
-    width: 100px;
-    height: 4px;
-    transform: rotate(90deg);
-    background-color: lightgray;
-    transition: transform 0.2s, background-color 0.5s;
-}
-
-.prev-two {
-    margin-top: 65px;
-    width: 100px;
-    height: 4px;
-    transform: rotate(-90deg);
-    background-color: lightgray;
-    transition: transform 0.2s, background-color 0.5s;
-}
-
 .prev {
     float: left;
     left: 0;
@@ -258,35 +228,6 @@ footer a{
     right:0;
 }
 
-.next:hover .next-one {
-    background-color: red;
-    transform: rotate(45deg);
-    transition: transform 0.2s;
-    background-color: red;
-}
-
-.next:hover .next-two {
-    background-color: red;
-    transform: rotate(-45deg);
-    transition: transform 0.2s;
-    background-color: red;
-}
-.next-one {
-    width: 100px;
-    height: 4px;
-    transform: rotate(-90deg);
-    transition: transform 0.2s;
-    background-color: lightgray;
-}
-
-.next-two {
-    margin-top: 65px;
-    width: 100px;
-    height: 4px;
-    transform: rotate(90deg);
-    transition: transform 0.2s;
-    background-color: lightgray;
-}
 
 @-webkit-keyframes flash {
   from,
