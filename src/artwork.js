@@ -42,7 +42,7 @@ export default class Artwork extends React.Component {
                     <div className="arrow prev">
                         <Link to={`/artwork/${this.state.artwork.id -1}`} >
                             <div className="prev">
-                                <img src="/next.png" />
+                                <img src="/prev.png" />
                             </div>
                         </Link>
                     </div>
