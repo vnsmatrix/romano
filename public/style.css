@@ -64,7 +64,13 @@ nav {
     width: 333px;
 }
 
-#about, #contact {
+.slime {
+    width: 100vw;
+    height: 110vh;
+    top: 0;
+}
+
+#about, #contact{
     text-align: justify;
     font-size: 36px;
     color: red;
@@ -209,12 +215,10 @@ footer a{
     top: 40%;
 }
 
-.arrow a:visited {
-    color: gray;
-}
-
-.arrow a:hover {
-    color: red;
+.arrow img:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 1s;
 }
 
 .prev {
@@ -223,10 +227,15 @@ footer a{
 }
 
 .next {
-
     float:right;
     right:0;
 }
+
+.next img {
+    transform: rotate(180deg);
+}
+
+
 
 
 @-webkit-keyframes flash {
@@ -478,6 +487,40 @@ footer a{
   }
 }
 
-.zoomIn {
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
 
 }

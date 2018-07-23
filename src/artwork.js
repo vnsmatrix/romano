@@ -33,7 +33,7 @@ export default class Artwork extends React.Component {
     render() {
         console.log('Artwork render this.state', this.state);
         if(!this.state.artwork) {
-            return <div>take care of <0 n >27 </div>;
+            return <div>take care of -0 27- </div>;
         }
         return (
             <div className="artwork">
@@ -42,7 +42,7 @@ export default class Artwork extends React.Component {
                     <div className="arrow prev">
                         <Link to={`/artwork/${this.state.artwork.id -1}`} >
                             <div className="prev">
-                                cool snake here
+                                <img src="/next.png" />
                             </div>
                         </Link>
                     </div>
@@ -53,8 +53,8 @@ export default class Artwork extends React.Component {
                     </div>
                     <div className="arrow next">
                         <Link to={`/artwork/${this.state.artwork.id +1}`}>
-                            <img src=""/>
-                            
+                            <img src="/next.png" />
+
                         </Link>
                     </div>
                 </div>

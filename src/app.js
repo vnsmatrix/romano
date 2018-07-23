@@ -5,13 +5,24 @@ import About from './about';
 import Artworks from './artworks';
 import Artwork from './artwork';
 import Contact from './contact';
-import SimpleSlider from './slider';
+import Home from './home';
 
 export default class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
         };
+        this.meow = this.meow.bind(this);
+    }
+
+    meow () {
+        var audio = $("audio")[0];
+        var playPromise = audio.play();
+        if (playPromise !== undefined) {
+            playPromise.then(function() {
+            }).catch(function(error) {
+            });
+        }
     }
 
     render() {
@@ -22,7 +33,7 @@ export default class App extends React.Component {
                     <audio id="cat">
                         <source src="meow.mp3"></source>
                     </audio>
-                    <div className='home'>
+                    <div className='home' onMouseOver={this.meow}>
                         <Link to="/home"><h1>NIL & KARIN ROMANO</h1></Link>
                     </div>
 
@@ -51,7 +62,7 @@ export default class App extends React.Component {
                         <Route path="/artworks" component={Artworks} />
                         <Route exact path="/artwork/:id" component={Artwork} />
                         <Route path="/contact" component={Contact} />
-                        <Route path="/home" component={SimpleSlider} />
+                        <Route path="/home" component={Home} />
                     </div>
                 </div>
 

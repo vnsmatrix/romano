@@ -7,11 +7,11 @@ export default class SimpleSlider extends React.Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToShow: 6,
+      slidesToScroll: 6
     };
     return (
-      <Slider {...settings}>
+      <Slider {...settings} >
         <div>
           <h3>1</h3>
         </div>
