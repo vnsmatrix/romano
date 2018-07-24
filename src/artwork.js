@@ -33,7 +33,11 @@ export default class Artwork extends React.Component {
     render() {
         console.log('Artwork render this.state', this.state);
         if(!this.state.artwork) {
-            return <div>take care of -0 27- </div>;
+            return (
+                <div>
+                    <Link to="/contact">See sth you like?</Link>
+                </div>
+            )
         }
         return (
             <div className="artwork">
