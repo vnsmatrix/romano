@@ -44,9 +44,20 @@ app.get('/get-artworks', function(req,res) {
 
 app.get('/get-artwork/:id', (req, res) => {
     console.log('///GET ARTWORK');
-    getArtworkById(req.params.id).then(result => {
+    //CHANGE hardcoded
+    let curId;
+    if (req.params.id < 1) {
+        curId = 27;
+    } else if (req.params.id > 27) {
+        curId = 1;
+    } else {
+        curId = req.params.id;
+    }
+    console.log(curId);
+    getArtworkById(curId).then(result => {
         console.log('///getArtworkById result.rows', result.rows);
         res.json({
+            success: true,
             artwork: result.rows[0]
         })
     }).catch(e => {

@@ -12,6 +12,7 @@ export default class Artwork extends React.Component {
         axios.get(`/get-artwork/${this.props.match.params.id}`).then(resp => {
             console.log("Artwork axios.get resp.data", resp.data);
             this.setState({
+                success: resp.data.success,
                 artwork: resp.data.artwork
             })
         }).catch(e => {
@@ -23,6 +24,7 @@ export default class Artwork extends React.Component {
         axios.get(`/get-artwork/${this.props.match.params.id}`).then(resp => {
             console.log("Artwork axios.get resp.data", resp.data);
             this.setState({
+                success: resp.data.success,
                 artwork: resp.data.artwork
             })
         }).catch(e => {
@@ -33,11 +35,7 @@ export default class Artwork extends React.Component {
     render() {
         console.log('Artwork render this.state', this.state);
         if(!this.state.artwork) {
-            return (
-                <div>
-                    <Link to="/contact">See sth you like?</Link>
-                </div>
-            )
+            return null;
         }
         return (
             <div className="artwork">
@@ -45,9 +43,7 @@ export default class Artwork extends React.Component {
                 <div className="modal-container">
                     <div className="arrow prev">
                         <Link to={`/artwork/${this.state.artwork.id -1}`} >
-                            <div className="prev">
-                                <img src="/prev.png" />
-                            </div>
+                            <img src="/prev.png" />
                         </Link>
                     </div>
                     <div className="modal-img">
